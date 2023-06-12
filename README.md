@@ -23,12 +23,14 @@ inputs:
 To move counterclockwise around the circle.
 2. right button
 To move clockwise around the circle.
-3. switch
-(to turn the game on and off)
+3. switch 
+(If left, game is on loop and if starting on right, nothing happens)
 	
 
 outputs:
-1. individual **LED** telling where your character is (range 0-9) [the LEDs 0-9 used as background, character, and to store location of hidden point]
+1. individual **LED** telling where your character is (range 0-9) [the rest of the LEDs 0-9 used as background]
 
-2. **speaker** beeping faster for when you're closer (beep for 50ms, wait 50 and 1000 ms between beeps [depending on distance between character and hidden (range 0-8)])
-Mapped function: convert [abs(char-hidden)] from 0-9(LED values) to 50-2000 (ms).
+2. **speaker** beeping faster for when you're closer (beep for 50-1000ms [depending on distance between character and hidden (range 0-9)]) & async delay 1 sec between beeps.
+Mapped function: convert [abs(char-hidden)] from 0-9(LED values) to 50-1000 (ms).
+
+3. Serial tells you when each round starts, and your final time in seconds.
