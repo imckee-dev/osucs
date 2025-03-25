@@ -1,6 +1,0 @@
-5
-Americano 3.45 3.65 3.95
-Cappuccino 3.75 4.15 4.45
-Latte 3.95 4.45 4.95
-Flat_White 3.9 4.15 4.35
-Single_Shot 1.95 2.45 2.95
